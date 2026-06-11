@@ -22,7 +22,7 @@ app.post('/player/growid/checktoken', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send("Hello World");
+  res.redirect("/player/login/dashboard");
 });
 
 app.all('/player/login/dashboard', (req, res) => {
